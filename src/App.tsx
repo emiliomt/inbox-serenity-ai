@@ -8,6 +8,7 @@ import Import from "./pages/Import";
 import Dashboard from "./pages/Dashboard";
 import Summary from "./pages/Summary";
 import NotFound from "./pages/NotFound";
+import Header from "./components/Header";
 
 const queryClient = new QueryClient();
 
@@ -17,6 +18,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/import" element={<Import />} />
